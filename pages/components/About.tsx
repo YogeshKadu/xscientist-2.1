@@ -1,6 +1,7 @@
 import React from 'react';
 import { motion } from "framer-motion";
 
+
 type props={}
 export default function About({}:props) {
   return (
@@ -20,7 +21,7 @@ export default function About({}:props) {
       </motion.h1>
       <div className=' text-sm md:text-base mt-20'>
         <p className='text-justify mb-2'>xScientist is an software and game development company based in India focused on helping entrepreneurs, engineers and scientists to build great products using cutting edge technologies.</p>
-        <p className='text-justify mb-2'>We are x individuals on a mission to bring people's ideas into reality with the line of code and provides rapid development platform to collaborators from around the world remotely.</p>
+        <p className='text-justify mb-2'>We are x individuals on a mission to bring people&lsquo;s ideas into reality with the line of code and provides rapid development platform to collaborators from around the world remotely.</p>
         <p className='text-justify mb-2'>Our story began in 2018 when some of us were still in college. While solving some of the most complex problems during undergrad like Secure Drone Communication, Ship Detection and Size Estimation from Synthetic Aperture Radar Sentinel Satellite Images, GPS Navigation System with Augmented Reality and representing India at Hackathons, we realised the potential of AI. Today, we aim to run our algorithms on thousands of devices across the world empowering organisations to do more harnessing the true capacity of Artificial Intelligence.</p>
       </div>
       <motion.div
@@ -40,7 +41,6 @@ export default function About({}:props) {
             <div className='w-4 h-4 rounded-[500px] bg-[#5D5FEC] shadow-[0px_0px_0px_15px] shadow-[#5d5fec]/50 absolute
               top-[55px]
             '></div>
-            {/* <span className='w-full h-[4px] bg-[#5D5FEC] block card-first:rounded-lg'></span> */}
             <p className='mt-24'>2018</p>
           </div>
         )}

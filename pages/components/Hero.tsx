@@ -1,7 +1,7 @@
 import React from 'react';
 import { motion } from "framer-motion";
-import Typical from 'react-typical';
-// import {Typical} from 'react-typical';
+import { Typewriter } from 'react-simple-typewriter';
+
 type props = {};
 export default function Hero ({}: props){
 
@@ -18,7 +18,7 @@ export default function Hero ({}: props){
                 animate={{scale:1,opacity:1}}
                 className='uppercase text-4xl font-extrabold'
             >
-                <Typical
+                {/* <Typical
                     loop={Infinity}
                     wrapper="b"
                     speed={2000}
@@ -32,7 +32,16 @@ export default function Hero ({}: props){
                         "Everything",
                         2000
                     ]}
-                    />
+                    /> */}
+        <Typewriter
+            words={['Eat', 'Sleep', 'Code', 'Repeat!']}
+            loop={5}
+            cursor
+            cursorStyle='_'
+            typeSpeed={70}
+            deleteSpeed={50}
+            delaySpeed={1000}
+          />
             </motion.h1>
             <motion.h1
                 initial={{y:50,opacity:0}}
