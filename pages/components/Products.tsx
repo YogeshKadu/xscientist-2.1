@@ -1,5 +1,6 @@
 import React, { useEffect, useRef, useState } from 'react';
 import { motion } from "framer-motion";
+import Image from 'next/image';
 
 export default function Products() {
   return (
@@ -21,7 +22,7 @@ export default function Products() {
           {/*  */}
           <div className='relative snap-start flex-1 h-96 min-w-max'>
             <div className="image w-full h-full">
-              <img src="https://picsum.photos/200/300" alt="demo image" className='w-full h-full object-cover grayscale-[0.5]' />
+              <Image src="https://picsum.photos/200/300" alt="demo image" layout='fill' className='object-cover grayscale-[0.5]' />
             </div>
             <div className="absolute top-4 left-4 right-4 bottom-4 bg-black/20 rounded-md grid place-content-center">
               <span className='uppercase tracking-widest'>NEWSLIX</span>
@@ -29,7 +30,7 @@ export default function Products() {
           </div>
           <div className='relative snap-start flex-1 h-96 min-w-max'>
             <div className="image w-full h-full">
-              <img src="https://picsum.photos/200/300" alt="demo image" className='w-full h-full object-cover grayscale-[0.5]' />
+              <Image src="https://picsum.photos/200/300" alt="demo image" layout='fill' className='object-cover grayscale-[0.5]' />
             </div>
             <div className="absolute top-4 left-4 right-4 bottom-4 bg-black/20 rounded-md grid place-content-center">
               <span className='uppercase tracking-widest'>DEEPOST</span>
@@ -37,7 +38,7 @@ export default function Products() {
           </div>
           <div className='relative snap-start flex-1 h-96 min-w-max'>
             <div className="image w-full h-full">
-              <img src="https://picsum.photos/200/300" alt="demo image" className='w-full h-full object-cover grayscale-[0.5]' />
+              <Image src="https://picsum.photos/200/300" alt="demo image" layout='fill' className='object-cover grayscale-[0.5]' />
             </div>
             <div className="absolute top-4 left-4 right-4 bottom-4 bg-black/20 rounded-md grid place-content-center">
               <span className='uppercase tracking-widest'>ONCLICK</span>
@@ -45,7 +46,7 @@ export default function Products() {
           </div>
           <div className='relative snap-start flex-1 h-96 min-w-max'>
             <div className="image w-full h-full">
-              <img src="https://picsum.photos/200/300" alt="demo image" className='w-full h-full object-cover grayscale-[0.5]' />
+              <Image src="https://picsum.photos/200/300" alt="demo image" layout='fill' className='object-cover grayscale-[0.5]' />
             </div>
             <div className="absolute top-4 left-4 right-4 bottom-4 bg-black/20 rounded-md grid place-content-center">
               <span className='uppercase tracking-widest'>Darksight</span>

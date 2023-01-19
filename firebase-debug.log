@@ -1,0 +1,29 @@
+[debug] [2023-01-19T19:49:27.006Z] ----------------------------------------------------------------------
+[debug] [2023-01-19T19:49:27.009Z] Command:       C:\Program Files\nodejs\node.exe C:\Program Files\nodejs\node_modules\firebase-tools\lib\bin\firebase.js deploy
+[debug] [2023-01-19T19:49:27.009Z] CLI Version:   11.20.0
+[debug] [2023-01-19T19:49:27.010Z] Platform:      win32
+[debug] [2023-01-19T19:49:27.010Z] Node Version:  v18.8.0
+[debug] [2023-01-19T19:49:27.011Z] Time:          Fri Jan 20 2023 01:19:27 GMT+0530 (India Standard Time)
+[debug] [2023-01-19T19:49:27.011Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2023-01-19T19:49:27.134Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2023-01-19T19:49:27.135Z] > authorizing via signed-in user (kaduyogesh99@gmail.com)
+[debug] [2023-01-19T19:49:27.135Z] [iam] checking project xscientist-1 for permissions ["cloudfunctions.functions.create","cloudfunctions.functions.delete","cloudfunctions.functions.get","cloudfunctions.functions.list","cloudfunctions.functions.update","cloudfunctions.operations.get","firebase.projects.get","firebasehosting.sites.update"]
+[debug] [2023-01-19T19:49:27.138Z] >>> [apiv2][query] POST https://cloudresourcemanager.googleapis.com/v1/projects/xscientist-1:testIamPermissions [none]
+[debug] [2023-01-19T19:49:27.139Z] >>> [apiv2][(partial)header] POST https://cloudresourcemanager.googleapis.com/v1/projects/xscientist-1:testIamPermissions x-goog-quota-user=projects/xscientist-1
+[debug] [2023-01-19T19:49:27.139Z] >>> [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/xscientist-1:testIamPermissions {"permissions":["cloudfunctions.functions.create","cloudfunctions.functions.delete","cloudfunctions.functions.get","cloudfunctions.functions.list","cloudfunctions.functions.update","cloudfunctions.operations.get","firebase.projects.get","firebasehosting.sites.update"]}
+[debug] [2023-01-19T19:49:28.884Z] <<< [apiv2][status] POST https://cloudresourcemanager.googleapis.com/v1/projects/xscientist-1:testIamPermissions 200
+[debug] [2023-01-19T19:49:28.885Z] <<< [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/xscientist-1:testIamPermissions {"permissions":["cloudfunctions.functions.create","cloudfunctions.functions.delete","cloudfunctions.functions.get","cloudfunctions.functions.list","cloudfunctions.functions.update","cloudfunctions.operations.get","firebase.projects.get","firebasehosting.sites.update"]}
+[debug] [2023-01-19T19:49:28.885Z] >>> [apiv2][query] POST https://iam.googleapis.com/v1/projects/xscientist-1/serviceAccounts/xscientist-1@appspot.gserviceaccount.com:testIamPermissions [none]
+[debug] [2023-01-19T19:49:28.885Z] >>> [apiv2][body] POST https://iam.googleapis.com/v1/projects/xscientist-1/serviceAccounts/xscientist-1@appspot.gserviceaccount.com:testIamPermissions {"permissions":["iam.serviceAccounts.actAs"]}
+[debug] [2023-01-19T19:49:30.507Z] <<< [apiv2][status] POST https://iam.googleapis.com/v1/projects/xscientist-1/serviceAccounts/xscientist-1@appspot.gserviceaccount.com:testIamPermissions 200
+[debug] [2023-01-19T19:49:30.507Z] <<< [apiv2][body] POST https://iam.googleapis.com/v1/projects/xscientist-1/serviceAccounts/xscientist-1@appspot.gserviceaccount.com:testIamPermissions {"permissions":["iam.serviceAccounts.actAs"]}
+[debug] [2023-01-19T19:49:30.508Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/xscientist-1 [none]
+[debug] [2023-01-19T19:49:31.083Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/xscientist-1 200
+[debug] [2023-01-19T19:49:31.084Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/xscientist-1 {"projectId":"xscientist-1","projectNumber":"938844257188","displayName":"xscientist-1","name":"projects/xscientist-1","resources":{"hostingSite":"xscientist-1"},"state":"ACTIVE","etag":"1_c9d98419-f1a8-476a-92e9-ea38e1b52371"}
+[debug] [2023-01-19T19:50:02.874Z] TypeError: Cannot read properties of null (reading 'toString')
+    at ɵcodegenFunctionsDirectory (D:\nvm\v18.8.0\node_modules\firebase-tools\lib\frameworks\next\index.js:220:18)
+    at async prepareFrameworks (D:\nvm\v18.8.0\node_modules\firebase-tools\lib\frameworks\index.js:305:84)
+    at async deploy (D:\nvm\v18.8.0\node_modules\firebase-tools\lib\deploy\index.js:53:13)
+[error] 
+[error] Error: An unexpected error has occurred.

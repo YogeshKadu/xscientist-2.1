@@ -1,5 +1,6 @@
 import React from 'react';
 import { motion } from "framer-motion";
+import Image from 'next/image';
 
 export default function Team() {
     const teamName = [
@@ -39,7 +40,8 @@ export default function Team() {
                         teamName.map(item=>
                             <div key={item.id} className="relative bg-black/20 flex-shrink min-w-[250px] h-[350px] rounded-lg overflow-hidden">
                                 <div className="img w-full h-full">
-                                    <img src={`https://xsgames.co/randomusers/avatar.php?g=male&g=pixel&random=${item.id}`}
+                                    <Image src={`https://xsgames.co/randomusers/avatar.php?g=male&g=pixel&random=${item.id}`}
+                                        layout='fill'
                                         alt="profile"
                                         className='w-full h-full grayscale-[0.5]'
                                      />
